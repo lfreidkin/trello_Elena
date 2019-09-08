@@ -18,7 +18,7 @@ public class TestBase {
     driver.manage().window().maximize();
 
     openSite("https://trello.com");
-    login("elena.telran@yahoo.com", "12345.com");
+    login("lfreidkin@gmail.com", "lcblmamf28021991");
   }
 
   public void login(String email, String password) {
@@ -88,5 +88,9 @@ driver.quit();
 
   public void confirmBoardCreation() {
     click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
+  }
+
+    public void backToHomePage() throws InterruptedException {
+  click(By.cssSelector("a[href='/']"));
   }
 }
